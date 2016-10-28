@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script type="text/javascript" src="JS/jquery1.10.2.js"></script>
+</head>
+<body>
+    <div>
+        <p>hehe1</p>
+    </div>
+    <script type="text/javascript">
+    </script>
+    <div>
+        <p>hehe2</p>
+        <input type="button" onclick="argunmenttest(1, 2, '123')" />
+    </div>
+    <script type="text/javascript">
+        //with (location) {
+        //    var qs = search.substring(1);
+        //    alert(qs);
+        //}
+        function howMany() {
+            alert(arguments.length);
+        }
+        function argunmenttest() {
+            if (arguments.length == 1) {
+                alert(arguments[0]);
+            }
+            else {
+                alert(arguments[arguments.length - 1]);
+            }
+        }
+        $(document).ready(function () {
+            var person = new Object();
+            person.name123 = "fulin1";
+            var copytemp = person;
+            //alert(copytemp.name123);
+            var s = "haha";
+            alert(person instanceof Array);
+        })
+
+    </script>
+</body>
+</html>
